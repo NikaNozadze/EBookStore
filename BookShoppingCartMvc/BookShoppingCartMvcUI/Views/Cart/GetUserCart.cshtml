@@ -1,0 +1,72 @@
+﻿@model ShoppingCart
+@{
+    ViewData["Title"] = "GetUserCart";
+}
+
+<style>
+    #custom-table {
+        background-color: transparent;
+        color: white;
+    }
+</style>
+
+<div style="width:90%;margin:auto">
+    @if (Model != null && Model.CartDetails != null && Model.CartDetails.Count > 0)
+    {
+        <div class="row pb-2">
+            <h3 style="font-size: 50px; font-weight: bold; color: #aba9a7;">My Cart</h3>
+            <hr style="margin-top: 10px;" />
+        </div>
+
+        <table class="table table-primary" id="custom-table">
+            <tr>
+                <th>Book</th>
+                <th>Image</th>
+                <th>Genre</th>
+                <th>Unit Price(INR)</th>
+                <th>Total Price</th>
+                <th>Action</th>
+            </tr>
+            @foreach (var item in Model.CartDetails)
+            {
+                <tr>
+                    <td>@item.Book.BookName</td>
+                    <td>
+                        @if (string.IsNullOrEmpty(item.Book.Image))
+                        {
+                            <img src="\images\noimage.jpg" style="width:80px;height:100px"/>
+                        }
+                        else
+                        {
+                            <img src="\images\@item.Book.Image" style="width:80px;height:100px"/>
+                        }
+                    </td>
+                    <td>@item.Book.Genre.GenreName</td>
+                    <td>@item.Book.Price x @item.Quantity</td>
+                    <td>@(item.Book.Price*item.Quantity)</td>
+                    <td>
+                        <a class="btn btn-info" href="/Cart/AddItem?bookId=@item.BookId&&redirect=1">+</a>
+                        <a class="btn btn-info" href="/Cart/RemoveItem?bookid=@item.BookId">-</a>
+                    </td>
+                </tr>
+            }
+        </table>
+
+        <div class="my-2" style="color: #aba9a7;">
+            <h5>Total(INR): </h5> 
+            @(Model.CartDetails.Select(item=>item.Book.Price*item.Quantity).Sum())
+        </div>
+
+        <div class="my-2">
+            <a class="btn btn-primary" href="/Cart/Checkout">Checkout</a>
+        </div>
+    }
+    else
+    {
+        <div class="row pb-2">
+            <div style="margin-top: 15px;">
+                <h5 style="font-size: 50px; font-weight: bold; color: #aba9a7">Cart Is Empty</h5>
+            </div>
+        </div>
+    }
+</div>

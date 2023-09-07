@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BookShoppingCartMvcUI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BookShoppingCartMvcUI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\05bcbe5f-566d-4bb3-ba20-46ff1927d6a1.png",
+      "PackagePath": "staticwebassets\\Images\\05bcbe5f-566d-4bb3-ba20-46ff1927d6a1.png"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\2136044a-fd9b-4958-9994-85e2646df22d.jpg",
+      "PackagePath": "staticwebassets\\Images\\2136044a-fd9b-4958-9994-85e2646df22d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\450e2355-7ebe-4675-a239-75e5d2ab0f07.jpg",
+      "PackagePath": "staticwebassets\\Images\\450e2355-7ebe-4675-a239-75e5d2ab0f07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\AroundTheWorldIn80Days.png",
+      "PackagePath": "staticwebassets\\Images\\AroundTheWorldIn80Days.png"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Ice.jpg",
+      "PackagePath": "staticwebassets\\Images\\Ice.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Kindred.jpg",
+      "PackagePath": "staticwebassets\\Images\\Kindred.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\NoImage.jpg",
+      "PackagePath": "staticwebassets\\Images\\NoImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Notebook.jpg",
+      "PackagePath": "staticwebassets\\Images\\Notebook.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Odyssey.jpg",
+      "PackagePath": "staticwebassets\\Images\\Odyssey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Outlander.jpg",
+      "PackagePath": "staticwebassets\\Images\\Outlander.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\Solaris.jpg",
+      "PackagePath": "staticwebassets\\Images\\Solaris.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\TheCallOfTheWild.jpg",
+      "PackagePath": "staticwebassets\\Images\\TheCallOfTheWild.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\TheShining.jpg",
+      "PackagePath": "staticwebassets\\Images\\TheShining.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\ThehatingGame.jpg",
+      "PackagePath": "staticwebassets\\Images\\ThehatingGame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\backgroundImage.jpg",
+      "PackagePath": "staticwebassets\\Images\\backgroundImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\dracula.jpg",
+      "PackagePath": "staticwebassets\\Images\\dracula.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\frankenstein.jpg",
+      "PackagePath": "staticwebassets\\Images\\frankenstein.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\it.jpg",
+      "PackagePath": "staticwebassets\\Images\\it.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\Images\\the-hobbit.jpg",
+      "PackagePath": "staticwebassets\\Images\\the-hobbit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nika\\Desktop\\BookShoppingCartMvc\\BookShoppingCartMvcUI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BookShoppingCartMvcUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BookShoppingCartMvcUI.props",
+      "PackagePath": "build\\BookShoppingCartMvcUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BookShoppingCartMvcUI.props",
+      "PackagePath": "buildMultiTargeting\\BookShoppingCartMvcUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BookShoppingCartMvcUI.props",
+      "PackagePath": "buildTransitive\\BookShoppingCartMvcUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,72 @@
+﻿@model BookShoppingCartMvcUI.Models.Book
+
+@if (User.IsInRole("Admin"))
+{
+    <form method="post" enctype="multipart/form-data">
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <b><h2 style="font-size: 50px; font-weight: bold; color: #aba9a7;">Create Book</h2></b>
+                <hr style="margin-top: 10px;" />
+            </div>
+            <div class="row">
+
+                <img id="uploadedImage" style="width:auto; height:450px" src="@Url.Content("~/images/noimage.jpg")" class="card-img-top" alt="...">
+                
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <input type="file" name="imageFile" id="imageInput" accept="image/*" style="display: none;">
+                        <button type="button" class="btn btn-primary" id="uploadButton" style="font-size: 18px;">Upload Image</button>
+
+                        <input type="hidden" name="deleteImageFile" id="deleteImageInput" value="">
+                        <button type="button" class="btn btn-danger" id="deleteButton" style="font-size: 18px;">Delete Image</button>
+                    </div>
+                    <div style="margin-top: 20px;"></div> 
+                    <div class="mb-3">
+                        <b style="color: #aba9a7;"><label asp-for="BookName" style="font-size: 20px;"></label></b>
+                        <input asp-for="BookName" class="form-control" style="font-size: 18px;" />
+                    </div>
+                    <div class="mb-3">
+                        <b style="color: #aba9a7;"><label asp-for="Price" style="font-size: 20px;"></label></b>
+                        <input asp-for="Price" class="form-control" step="0.01" style="font-size: 18px;" />
+                    </div>
+                    <div class="mb-3">
+                        <b style="color: #aba9a7;"><label asp-for="Genre" style="font-size: 20px;"></label></b>
+                        <select input asp-for="Price" class="form-select" id="genreId" name="genreId" style="font-size: 18px;" >
+                            <option selected>Choose Genre</option>
+                            <option value="1">Adventure</option>
+                            <option value="2">Science fiction</option>
+                            <option value="3">Romance</option>
+                            <option value="4">Horror</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <b style="color: #aba9a7;"><label asp-for="AuthorName" style="font-size: 20px;"></label></b>
+                        <input asp-for="AuthorName" class="form-control"  style="font-size: 18px;" />
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 150px; font-size: 20px;">Create</button>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary" style="width: 150px; font-size: 20px;">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('uploadButton').addEventListener('click', function() {
+            document.getElementById('imageInput').click();
+        });
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            var uploadedImage = document.getElementById('uploadedImage');
+            uploadedImage.src = URL.createObjectURL(event.target.files[0]);
+            document.getElementById('deleteImageInput').value = "";
+        });
+
+        document.getElementById('deleteButton').addEventListener('click', function() {
+            var preview = document.getElementById('uploadedImage');
+            preview.src = "/images/noimage.jpg";
+            document.getElementById('deleteImageInput').value = "/images/noimage.jpg";
+            document.getElementById('imageInput').value = "";
+        });
+    </script>
+}
